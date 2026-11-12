@@ -1,0 +1,103 @@
+UNIT I
+ Philosophical Understanding of Research
+
+1. Philosophical Concepts of Research
+
+ English Research philosophy refers to the system of beliefs and assumptions about the
+ development of knowledge and the nature of reality. Before choosing how to collect data (surveys
+ vs. interviews), a researcher must understand what counts as valid truth and reality. The three
+ core pillars of research philosophy are Ontology (what is reality?), Epistemology (how do we
+ know reality?), and Axiology (what role do values and ethics play?).
+
+ Hinglish (Teacher Style) Dekho students, jab bhi hum koi research shuru karte hain, toh seedha
+ questionnaire ya survey banane nahi bhaagte. Sabse pehle humein apna nazarariya
+ (worldview/philosophy) clear karna padta hai. Research Philosophy ka simple matlab hai—aap
+ duniya ki sachai (reality) ko kaise dekhte ho aur aapke hisaab se "sahi gyaan (valid knowledge)"
+ kya hai? Jaise ek building ki neev (foundation) hoti hai, waise hi philosophy aapki research ki neev
+ hai.
+
+ Example Suppose two researchers study poverty in rural Odisha. Researcher A believes
+ poverty is strictly a number (income below ₹X per day)—this is a Positivist philosophy. Researcher
+ B believes poverty is a lived emotional experience of dignity and struggle—this is an Interpretivist
+ philosophy.
+
+2. Ontology (Nature of Reality)
+
+ English Ontology is the branch of philosophy concerned with the nature of reality and
+ existence ("What exists?" or "What is the nature of social reality?"). In research, ontology asks
+ whether social reality is objective (existing independently of human perception, known as
+ Objectivism/Realism) or subjective (socially constructed by human minds and interactions, known
+ as Constructivism/Subjectivism).
+
+ Hinglish (Teacher Style) Ontology ko yaad rakhne ka sabse aasan tarika hai ek sawaal: "Asliyat
+ (Reality) kya hai?" Kya sachai humare dimaag se bahar ek thos cheez hai jo sabke liye same hai
+ (Objectivism), ya phir sachai logon ki soch aur samaj ke banayein niyamo se banti hai
+ (Constructivism)? Agar aap maante ho ki sachai ek hi hai chahe koi dekhe ya na dekhe, toh aap
+ Objectivist ontology follow kar rahe ho.
+
+ Example
+
+ Objective Ontology: Gravity exists, or the population of a village is 1,250 people—this is an
+ external fact independent of our feelings.
+
+ Subjective (Constructivist) Ontology: "Workplace Happiness" or "Gender Roles" do not exist as
+ physical objects; they are created by people's perceptions, culture, and daily interactions.
+
+3. Epistemology (Theory of Knowledge)
+
+ English Epistemology is the study of the nature, sources, and validity of knowledge ("How do
+ we know what we know?" and "What constitutes acceptable knowledge?"). It examines the
+ relationship between the researcher and what is being researched:
+
+Positivism: Knowledge comes only from observable, measurable, scientific facts (uses
+ quantitative data).
+
+ Interpretivism: Knowledge comes from understanding human meanings, motives, and social
+ contexts (uses qualitative data).
+
+ Hinglish (Teacher Style) Ontology ne pucha "Reality kya hai?", ab Epistemology puchti hai "Us
+ reality ke baare mein hum Sahi Knowledge kaise haasil karein?" Matlab gyaan paane ka rasta kya
+ hai? Agar aap kehte ho ki sirf data, numbers aur lab experiments se hi sachai pata chalegi, toh yeh
+ Positivist Epistemology hai. Aur agar aap kehte ho ki insaano se baat karke, unke dukh-sukh
+ samajh ke hi sachai pata chalegi, toh yeh Interpretivist Epistemology hai.
+
+ Example To study student exam stress:
+
+ Positivist Epistemology: Measuring blood pressure, cortisol levels, and test scores of 500
+ students.
+
+ Interpretivist Epistemology: Sitting down with 15 students for deep interviews to understand why
+ family expectations make them anxious.
+
+4. Hermeneutics Theory
+
+ English Hermeneutics is the theory and methodology of interpretation, originally developed for
+ interpreting religious and historical texts, and later expanded by philosophers like Hans-Georg
+ Gadamer and Paul Ricoeur to all human actions, texts, and cultural artifacts. A core concept is the
+ Hermeneutic Circle, which states that we can only understand the whole text/event by
+ understanding its individual parts, and we can only understand the parts by placing them in the
+ context of the whole (historical, cultural, and authorial context).
+
+ Hinglish (Teacher Style) Beta, Hermeneutics ka seedha matlab hota hai "Art of Interpretation"
+ (kisi text, bhashan, ya insaani vyavahar ka gehra matlab nikalna). Maan lo aapko 200 saal purani
+ koi diary ya tribal folk song mila. Agar aap sirf dictionary se word-by-word translate karoge toh asli
+ matlab kabhi samajh nahi aayega! Aapko us waqt ke itihaas, culture, aur likhne wale ke haalaat ko
+ samajhna padega. Isko Hermeneutic Circle kehte hain—poore context se ek line ko samajhna, aur
+ har line se poore context ko samajhna.
+
+ Example A researcher studying Mahatma Gandhi's letters from prison cannot just read the
+ literal English words; using Hermeneutics, the researcher interprets each sentence in the context
+ of British colonial rule, the freedom struggle, and Gandhi's personal spiritual philosophy.
+
+ Philosophical Core Question Simple Meaning (Hinglish) Example in Research
+ Concept
+
+ Ontology What is reality? Asliyat (Reality) kaisi hai— Is poverty just low income, or
+ fixed ya man-made? a lived social state?
+
+ Epistemology How can we know Sahi knowledge paane ka Using statistical surveys vs.
+ reality? tarika kya hai? personal interviews.
+
+ Hermeneutics How do we Kisi text ya action ka Interpreting ancient
+ interpret chhupa hua context manuscripts or diaries in
+ meaning? samajhna. context.

@@ -1,0 +1,14 @@
+[project]
+name = "dhvani-pdf-audio"
+version = "1.0.0"
+description = "Free Hindi PDF to full MP3, with local neural TTS and optional Edge voices"
+requires-python = ">=3.11"
+license = "GPL-3.0-or-later"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q"
+
+[tool.ruff]
+line-length = 110
+target-version = "py311"

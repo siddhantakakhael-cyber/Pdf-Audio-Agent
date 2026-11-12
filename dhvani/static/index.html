@@ -1,0 +1,201 @@
+<!doctype html>
+<html lang="hi-Latn">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#173d33">
+  <meta name="description" content="Hindi PDF ko poore MP3 mein badliye. Free local neural voice, Hindi OCR, aur Hinglish text preview.">
+  <title>Dhvani — PDF se suno tak</title>
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/static/styles.css">
+  <script src="/static/app.js" defer></script>
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="/" aria-label="Dhvani home">
+      <span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></span>
+      <span>dhvani<span class="brand-dot">.</span></span>
+    </a>
+    <span class="brand-tag">PDF SE SUNO TAK</span>
+    <div class="top-actions">
+      <span id="service-status" class="status-pill"><span class="dot"></span>Voice check ho rahi hai</span>
+      <button id="help-button" class="ghost-button" type="button">Madad <span aria-hidden="true">↗</span></button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" aria-labelledby="hero-title">
+      <div>
+        <p class="eyebrow">HINDI / HINGLISH · AUDIOBOOK TOOL</p>
+        <h1 id="hero-title">Panno ko <span>awaaz</span> mein badlo.</h1>
+        <p class="hero-copy">PDF upload kijiye, text check kijiye, aur poora MP3 le jaiye.<br class="desktop-break"> Na paid API key, na adhura summary-audio.</p>
+      </div>
+      <div class="hero-note" aria-label="Tool features">
+        <span class="note-icon" aria-hidden="true">◎</span>
+        <strong>Kitab wahi.<br>Sunne ka andaaz naya.</strong>
+        <span class="note-small">Local neural voice · Full download</span>
+      </div>
+    </section>
+
+    <div id="setup-banner" class="banner warning" hidden>
+      <strong>Local voice abhi ready nahi hai.</strong>
+      <span>Terminal mein <code>python scripts/setup_assets.py</code> chalayein, phir page refresh karein.</span>
+    </div>
+
+    <section class="workspace" aria-label="PDF to audio workspace">
+      <div class="left-column">
+        <article class="card source-card">
+          <div class="card-heading">
+            <div><span class="step">01</span><h2>Apni PDF dijiye</h2></div>
+            <span class="small-label">HINGLISH FRIENDLY</span>
+          </div>
+
+          <div id="source-tabs" class="tabs" role="tablist" aria-label="Input source">
+            <button id="tab-upload" class="tab active" role="tab" aria-selected="true" aria-controls="panel-upload" type="button">PDF upload</button>
+            <button id="tab-paste" class="tab" role="tab" aria-selected="false" aria-controls="panel-paste" type="button">Text paste</button>
+          </div>
+
+          <div id="panel-upload" role="tabpanel" aria-labelledby="tab-upload">
+            <div id="dropzone" class="dropzone">
+              <input id="file-input" type="file" accept=".pdf,application/pdf" hidden>
+              <div class="upload-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none"><path d="M12 16V4m0 0L7.5 8.5M12 4l4.5 4.5M5 14v4.5A1.5 1.5 0 0 0 6.5 20h11a1.5 1.5 0 0 0 1.5-1.5V14" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </div>
+              <h3>PDF yahan drop kijiye</h3>
+              <p>ya apne device se file choose kijiye</p>
+              <button id="choose-file" class="button secondary" type="button">PDF choose karein <span aria-hidden="true">↑</span></button>
+              <span id="upload-limits" class="drop-meta">25 MB tak · 500 pages · PDF format</span>
+            </div>
+            <label class="check-row"><input id="ocr-toggle" type="checkbox" checked><span>Scanned pages ko Hindi + English OCR se padhein</span></label>
+          </div>
+
+          <div id="panel-paste" role="tabpanel" aria-labelledby="tab-paste" hidden>
+            <label class="sr-only" for="paste-input">Hindi ya Hinglish text</label>
+            <textarea id="paste-input" class="paste-area" placeholder="Yahan apna Hindi / Hinglish text paste kijiye…"></textarea>
+            <div class="paste-footer"><span id="paste-count">0 characters</span><button id="use-text" class="button secondary" type="button">Text review karein →</button></div>
+          </div>
+
+          <div id="file-summary" class="file-summary" hidden>
+            <span class="file-icon" aria-hidden="true">PDF</span>
+            <div class="file-info"><strong id="file-name"></strong><span id="file-meta"></span></div>
+            <span id="file-status" class="mini-badge"></span>
+          </div>
+          <div id="extract-progress" class="progress-block" hidden>
+            <div class="progress-label"><span id="extract-label">PDF padhi ja rahi hai…</span><span id="extract-percent"></span></div>
+            <div class="progress-track"><div id="extract-bar" class="progress-fill"></div></div>
+            <button id="extract-cancel" class="text-button" type="button">Cancel</button>
+          </div>
+        </article>
+
+        <article id="review-card" class="card review-card" hidden>
+          <div class="card-heading">
+            <div><span class="step">02</span><h2>Text ek baar dekh lijiye</h2></div>
+            <span id="char-count" class="small-label"></span>
+          </div>
+          <p class="card-copy">OCR ki matra ya spelling yahin sudhaar sakte hain. Jo text yahan hai, audio mein poora wahi padha jayega.</p>
+          <div class="tabs text-tabs" role="tablist" aria-label="Text view">
+            <button id="tab-original" class="tab active" role="tab" aria-selected="true" aria-controls="original-view" type="button">Original / edit</button>
+            <button id="tab-roman" class="tab" role="tab" aria-selected="false" aria-controls="roman-view" type="button">Hinglish preview</button>
+          </div>
+          <div id="original-view" role="tabpanel" aria-labelledby="tab-original">
+            <label class="sr-only" for="review-text">Extracted text, editable</label>
+            <textarea id="review-text" class="review-area" spellcheck="false"></textarea>
+          </div>
+          <div id="roman-view" role="tabpanel" aria-labelledby="tab-roman" hidden>
+            <label class="sr-only" for="roman-text">Approximate Roman Hindi preview</label>
+            <textarea id="roman-text" class="review-area roman" readonly></textarea>
+          </div>
+          <p class="fine-print">Hinglish preview approximate Roman Hindi hai, English translation nahi. Audio reviewed source text se banti hai; Roman preview sirf padhne ke liye hai.</p>
+          <div class="review-actions">
+            <button id="save-text" class="button secondary small" type="button" disabled>Badlav save karein</button>
+            <button id="download-text" class="text-button" type="button">Text download ↓</button>
+            <span id="save-status" class="save-status" aria-live="polite"></span>
+          </div>
+          <details id="warnings-box" class="warnings" hidden><summary>PDF / OCR notes <span id="warning-count"></span></summary><ul id="warnings-list"></ul></details>
+        </article>
+      </div>
+
+      <aside class="right-column">
+        <article class="card voice-card">
+          <div class="card-heading"><div><span class="step">03</span><h2>Awaaz aur style</h2></div></div>
+          <fieldset class="voice-options">
+            <legend class="sr-only">Voice choose karein</legend>
+            <label class="voice-option selected">
+              <input type="radio" name="voice" value="priyamvada" checked>
+              <span class="avatar female" aria-hidden="true">प</span>
+              <span class="voice-info"><strong>Priyamvada <span class="recommended">FREE</span></strong><small>Local neural · Bina internet</small></span>
+              <span class="radio-mark" aria-hidden="true"></span>
+            </label>
+            <label class="voice-option">
+              <input type="radio" name="voice" value="hi-IN-SwaraNeural">
+              <span class="avatar cloud" aria-hidden="true">S</span>
+              <span class="voice-info"><strong>Swara</strong><small>Online natural · Female</small></span>
+              <span class="radio-mark" aria-hidden="true"></span>
+            </label>
+            <label class="voice-option">
+              <input type="radio" name="voice" value="hi-IN-MadhurNeural">
+              <span class="avatar male" aria-hidden="true">M</span>
+              <span class="voice-info"><strong>Madhur</strong><small>Online natural · Male</small></span>
+              <span class="radio-mark" aria-hidden="true"></span>
+            </label>
+          </fieldset>
+
+          <div class="speed-control">
+            <div class="speed-heading"><label for="speed">Bolne ki speed</label><output id="speed-value" for="speed">1.0×</output></div>
+            <input id="speed" type="range" min="0.75" max="1.5" step="0.05" value="1" aria-label="Speech speed">
+            <div class="range-labels"><span>Dheere</span><span>Normal</span><span>Tez</span></div>
+          </div>
+
+          <button id="sample-button" class="button sample-button" type="button"><span aria-hidden="true">▷</span> Voice sample suniye</button>
+          <audio id="sample-audio" controls hidden></audio>
+          <p id="voice-privacy" class="voice-privacy"><span aria-hidden="true">◈</span> Local mode: text kisi aur service ko nahi jata.</p>
+
+          <div class="generate-area">
+            <button id="generate-button" class="button primary generate-button" type="button" disabled>Poora MP3 banaiye <span aria-hidden="true">→</span></button>
+            <p id="estimate" class="estimate">Pehle PDF upload ya text paste karein.</p>
+          </div>
+
+          <div id="generation-progress" class="progress-block generation-progress" hidden>
+            <div class="progress-label"><strong id="generation-label">Audio ban rahi hai…</strong><span id="generation-percent">0%</span></div>
+            <div class="progress-track"><div id="generation-bar" class="progress-fill"></div></div>
+            <p id="chunk-label" class="fine-print"></p>
+            <button id="generation-cancel" class="text-button" type="button">Audio banana rokein</button>
+          </div>
+
+          <div id="error-box" class="error-box" role="alert" hidden>
+            <strong>Thoda rukavat aa gayi</strong><p id="error-message"></p>
+            <div class="error-actions"><button id="retry-button" class="button secondary small" type="button">Phir try karein</button><button id="switch-local" class="text-button" type="button" hidden>Local voice par retry</button></div>
+          </div>
+
+          <div id="result-box" class="result-box" hidden>
+            <div class="result-heading"><span class="check-icon" aria-hidden="true">✓</span><div><strong>Aapka MP3 taiyaar hai!</strong><span id="result-meta"></span></div></div>
+            <audio id="result-audio" controls preload="metadata"></audio>
+            <button id="download-button" class="button primary download-button" type="button">MP3 download karein <span aria-hidden="true">↓</span></button>
+            <button id="new-job" class="text-button new-job" type="button">Nayi PDF banaiye</button>
+          </div>
+        </article>
+        <p class="tab-note">Lambi PDF? Tab khula rakhein. Refresh ke baad bhi isi browser session mein job resume ho sakti hai.</p>
+      </aside>
+    </section>
+
+    <section class="promises" aria-label="Important details">
+      <div><span aria-hidden="true">↳</span><strong>Poora text, summary nahi</strong><p>Har chunk judkar ek downloadable MP3 banta hai.</p></div>
+      <div><span aria-hidden="true">◫</span><strong>Scanned PDF ka option</strong><p>Hindi OCR ke baad text review zaroor karein.</p></div>
+      <div><span aria-hidden="true">◇</span><strong>Privacy, saaf-saaf</strong><p>Files server par process hoti hain; 24 ghante baad cleanup.</p></div>
+    </section>
+  </main>
+
+  <footer><span>dhvani. <span class="footer-muted">Aapki kahani, sunne ke liye.</span></span><span class="footer-muted">Free personal-use tool · Voice license aur limits ke liye Madad dekhein.</span></footer>
+  <div id="toast" class="toast" role="status" aria-live="polite" hidden></div>
+
+  <dialog id="help-dialog" aria-labelledby="help-title">
+    <div class="dialog-heading"><h2 id="help-title">Chhoti si madad</h2><button id="close-help" class="ghost-button" type="button" aria-label="Close help">✕</button></div>
+    <ol class="help-steps"><li>PDF upload karein, ya Hindi/Hinglish text paste karein.</li><li>Extracted text check karein. OCR mein galti ho to edit karke save karein.</li><li>Voice aur speed chunein, sample sunein, phir poora MP3 banayein.</li></ol>
+    <h3>Hinglish ka matlab?</h3><p>Yahan Hinglish ka matlab hai Hindi uchcharan aur Roman-Hindi preview. Yeh tool Hindi ko English mein translate nahi karta. Mixed Hindi-English text ke liye online Swara/Madhur zyada suitable ho sakte hain; local voice ka English accent alag ho sakta hai.</p>
+    <h3>Free, par kuch limits hain</h3><p>Local Priyamvada voice bina API key chalti hai. Online voices Microsoft Edge ki unofficial service use karti hain: internet chahiye, aur availability/rate limits guarantee nahi. Is preview ke network mein online service block ho sakti hai; local fallback isi liye hai.</p>
+    <p id="help-limits">PDF: 25 MB / 500 pages. Text: 10 lakh characters. Isse badi kitab ko parts mein baantein. Audio length par alag 10-minute cap nahi hai.</p>
+    <h3>License aur privacy</h3><p>Bundled Priyamvada voice ko conservative taur par non-commercial/personal use maana gaya hai; commercial use se pehle upstream dataset license verify karein. Code GPL-3.0-or-later hai. Local mode mein text third-party TTS ko nahi bheja jata. Online mode mein sirf text chunks Microsoft ko jate hain, PDF nahi. Yeh public production service nahi hai; sensitive documents ke liye apne private computer par chalayein.</p>
+    <h3>Audio fail ho to?</h3><p>Online voice fail ho to “Local voice par retry” dabayein. Local model missing ho to setup script chalayein. Password-locked PDF pehle unlock karein. Scanned PDF mein OCR on rakhein aur scan saaf ho to behtar result milega.</p>
+  </dialog>
+</body>
+</html>
