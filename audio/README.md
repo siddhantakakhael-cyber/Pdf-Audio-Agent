@@ -1,6 +1,37 @@
-# तैयार ऑडियो (Hindi Audio Notes)
+# तैयार ऑडियो (Audio Notes)
 
-## 1. OSOU — Artificial Intelligence (PGS-AI-205 / GS-AI-205)
+| # | ऑडियो | भाषा | अवधि | साइज़ |
+|---|---|---|---|---|
+| 1 | [AI — Hindi Full](OSOU_Artificial_Intelligence_Hindi_Full.mp3) | हिंदी | 16m 39s | 7.6 MB |
+| 2 | [AI — Simple English Full](OSOU_AI_6th_Standard_English_Full.mp3) | English | 12m 19s | 4.2 MB |
+
+दोनों में Units 1–8 + Appendix-I पूरे कवर हैं. फ़र्क सिर्फ़ भाषा और explanation style का है.
+
+## 2. OSOU — Artificial Intelligence: 6th-Standard Simple English Overview
+
+**पूरा टॉपिक — every unit, subtopic & Appendix-I, in simple everyday English**
+
+| | |
+|---|---|
+| फ़ाइल | [`OSOU_AI_6th_Standard_English_Full.mp3`](OSOU_AI_6th_Standard_English_Full.mp3) |
+| अवधि | **12 मिनट 19 सेकंड** |
+| साइज़ | 4.2 MB |
+| आवाज़ | Female, Indian English, normal speed |
+| फ़ॉर्मैट | MP3, 48 kbps, 24 kHz, mono |
+| Transcript | [`OSOU_AI_6th_Standard_English_transcript.txt`](OSOU_AI_6th_Standard_English_transcript.txt) |
+| Source text | [`OSOU_AI_6th_Standard_source_text.txt`](OSOU_AI_6th_Standard_source_text.txt) |
+
+**सीधा डाउनलोड:** [यहाँ क्लिक करें](../../raw/arena/f55f9949-pdf-audio-agent/audio/OSOU_AI_6th_Standard_English_Full.mp3)
+
+इस version में हर concept रोज़मर्रा की simple English और real-life example से समझाया गया है —
+जैसे hot stove से हाथ खींचना (Simple Reflex Agent), अँधेरे कमरे में torch लेकर नक्शा बनाना
+(SLAM), मेज़ पर रखी teacup तक पहुँचने के joint angles (Inverse Kinematics), और carpenter का
+hammer/saw वाला example (सही AI tool चुनना).
+
+Symbols को बोलकर पढ़ा गया है ताकि audio में साफ़ सुनाई दे: `∀` → "For All", `∃` → "There Exists",
+`∼ ∧ ∨ →` → "NOT, AND, OR, IF-THEN", और `T = T1 T2 … Tn` → "T equals T one times T two, and so on up to T n".
+
+## 1. OSOU — Artificial Intelligence (PGS-AI-205 / GS-AI-205) — Hindi
 
 **पूरा टॉपिक — Units 1 से 8 + Appendix-I, एक ही MP3 में**
 
