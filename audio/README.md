@@ -4,8 +4,11 @@
 |---|---|---|---|---|
 | 1 | [AI — Hindi Full](OSOU_Artificial_Intelligence_Hindi_Full.mp3) | हिंदी | 16m 39s | 7.6 MB |
 | 2 | [AI — Simple English Full](OSOU_AI_6th_Standard_English_Full.mp3) | English | 12m 19s | 4.2 MB |
+| 3 | [IKS-206 — Odia Long Q&A](OSOU_IKS_206_10_Mark_Odia_Full.mp3) | ଓଡ଼ିଆ | 12m 55s | 4.4 MB |
+| 4 | [IKS-206 — English Long Q&A](OSOU_IKS_206_8_Long_EN_Full.mp3) | English | _(next step)_ | — |
 
-दोनों में Units 1–8 + Appendix-I पूरे कवर हैं. फ़र्क सिर्फ़ भाषा और explanation style का है.
+पहले दो में AI (PGS-AI-205) के Units 1–8 + Appendix-I पूरे कवर हैं. फ़र्क सिर्फ़ भाषा और explanation style का है.
+आख़िरी दो IKS (PGV-IKS-206) के 8 long questions के model answers हैं — एक Odia में, एक English में.
 
 ## 2. OSOU — Artificial Intelligence: 6th-Standard Simple English Overview
 
@@ -88,3 +91,36 @@ Transcript तैयार है, ऑडियो अभी नहीं बन
 [`Unit-1_source_text.txt`](Unit-1_source_text.txt)
 
 बोलें तो इसका MP3 भी इसी folder में बना देंगे।
+
+## 3. OSOU — Indian Knowledge System (PGV-IKS-206) — 8 Long Questions
+
+**ପୂରା ପାଠ୍ୟକ୍ରମ (Units 1–8) — 8 long questions + full model answers**
+
+| | Odia | English |
+|---|---|---|
+| फ़ाइल | [`OSOU_IKS_206_10_Mark_Odia_Full.mp3`](OSOU_IKS_206_10_Mark_Odia_Full.mp3) | `OSOU_IKS_206_8_Long_EN_Full.mp3` |
+| अवधि | **12 मिनट 55 सेकंड** | — |
+| साइज़ | 4.4 MB | — |
+| आवाज़ | Female, Odia, normal speed | Female, Indian English |
+| Transcript | [`…_Odia_transcript.txt`](OSOU_IKS_206_10_Mark_Odia_transcript.txt) | [`…_EN_transcript.txt`](OSOU_IKS_206_8_Long_EN_transcript.txt) |
+
+**ସିଧା ଡାଉନଲୋଡ (Odia):** [ଏଠାରେ କ୍ଲିକ୍ କରନ୍ତୁ](../../raw/arena/f55f9949-pdf-audio-agent/audio/OSOU_IKS_206_10_Mark_Odia_Full.mp3)
+
+### Coverage — Q1 to Q8, one question per unit
+
+| Q | Unit | Topic |
+|---|---|---|
+| 1 | 1 | IKS concept, sources (Shruti/Smriti), 6 Pramanas, Samkhya & Yoga |
+| 2 | 2 | Mathematics, astronomy, metallurgy, Ayurveda, maritime trade |
+| 3 | 3 | Dharma, Rajadharma, Saptanga, indigenous agriculture, water ethics |
+| 4 | 4 | Panini's grammar, Nyaya logic, music & dance, Yoga, indigenous sports |
+| 5 | 5 | Odisha knowledge system, Pathani Samanta, Sadhaba trade, rural governance |
+| 6 | 6 | Kalinga temple architecture, Odissi, folk arts, Jagannath culture |
+| 7 | 7 | Tribal wisdom, water harvesting, Nuakhai/Ratha Yatra, textiles |
+| 8 | 8 | AI + IKS, Ayurgenomics, OCR of Pothis, ethical guardrails |
+
+### PDF extraction note (Odia)
+
+Odia PDF se text nikaalne par **matras duplicate** ho gaye the (`ଓଡ଼ିିଶା`, `ଜ୍ଞାାନ`). Audio banane se pehle
+har duplicated matra ko collapse kiya gaya (`ଓଡ଼ିଶା`, `ଜ୍ଞାନ`) — warna TTS galat uchcharan karta.
+Ye cleanup `OSOU_IKS_206_10_Mark_Odia_transcript.txt` mein already applied hai.
