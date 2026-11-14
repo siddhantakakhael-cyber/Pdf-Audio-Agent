@@ -6,6 +6,7 @@
 | 2 | [AI — Simple English Full](OSOU_AI_6th_Standard_English_Full.mp3) | English | 12m 19s | 4.2 MB |
 | 3 | [IKS-206 — Odia Long Q&A](OSOU_IKS_206_10_Mark_Odia_Full.mp3) | ଓଡ଼ିଆ | 12m 55s | 4.4 MB |
 | 4 | [IKS-206 — English Long Q&A](OSOU_IKS_206_8_Long_EN_Full.mp3) | English | 13m 38s | 4.7 MB |
+| 5 | [IKS-206 — Hinglish Long Q&A](OSOU_IKS_206_10_Mark_Hinglish_Full.mp3) | Hinglish (Devanagari) | 12m 04s | 4.1 MB |
 
 पहले दो में AI (PGS-AI-205) के Units 1–8 + Appendix-I पूरे कवर हैं. फ़र्क सिर्फ़ भाषा और explanation style का है.
 आख़िरी दो IKS (PGV-IKS-206) के 8 long questions के model answers हैं — एक Odia में, एक English में.
@@ -96,17 +97,19 @@ Transcript तैयार है, ऑडियो अभी नहीं बन
 
 **ପୂରା ପାଠ୍ୟକ୍ରମ (Units 1–8) — 8 long questions + full model answers**
 
-| | Odia | English |
-|---|---|---|
-| फ़ाइल | [`OSOU_IKS_206_10_Mark_Odia_Full.mp3`](OSOU_IKS_206_10_Mark_Odia_Full.mp3) | [`OSOU_IKS_206_8_Long_EN_Full.mp3`](OSOU_IKS_206_8_Long_EN_Full.mp3) |
-| अवधि | **12 मिनट 55 सेकंड** | **13 मिनट 38 सेकंड** |
-| साइज़ | 4.4 MB | 4.7 MB |
-| आवाज़ | Female, Odia, normal speed | Female, Indian English, normal speed |
-| Transcript | [`…_Odia_transcript.txt`](OSOU_IKS_206_10_Mark_Odia_transcript.txt) | [`…_EN_transcript.txt`](OSOU_IKS_206_8_Long_EN_transcript.txt) |
+| | Odia | English | Hinglish |
+|---|---|---|---|
+| फ़ाइल | [`…_Odia_Full.mp3`](OSOU_IKS_206_10_Mark_Odia_Full.mp3) | [`…_EN_Full.mp3`](OSOU_IKS_206_8_Long_EN_Full.mp3) | [`…_Hinglish_Full.mp3`](OSOU_IKS_206_10_Mark_Hinglish_Full.mp3) |
+| अवधि | **12m 55s** | **13m 38s** | **12m 04s** |
+| साइज़ | 4.4 MB | 4.7 MB | 4.1 MB |
+| आवाज़ | Female, Odia | Female, Indian English | Female, Hinglish |
+| Transcript | [`…_Odia_transcript.txt`](OSOU_IKS_206_10_Mark_Odia_transcript.txt) | [`…_EN_transcript.txt`](OSOU_IKS_206_8_Long_EN_transcript.txt) | [`…_Hinglish_transcript.txt`](OSOU_IKS_206_10_Mark_Hinglish_transcript.txt) |
 
 **ସିଧା ଡାଉନଲୋଡ (Odia):** [ଏଠାରେ କ୍ଲିକ୍ କରନ୍ତୁ](../../raw/arena/f55f9949-pdf-audio-agent/audio/OSOU_IKS_206_10_Mark_Odia_Full.mp3)
 
 **सीधा डाउनलोड (English):** [यहाँ क्लिक करें](../../raw/arena/f55f9949-pdf-audio-agent/audio/OSOU_IKS_206_8_Long_EN_Full.mp3)
+
+**सीधा डाउनलोड (Hinglish):** [यहाँ क्लिक करें](../../raw/arena/f55f9949-pdf-audio-agent/audio/OSOU_IKS_206_10_Mark_Hinglish_Full.mp3)
 
 ### Coverage — Q1 to Q8, one question per unit
 
