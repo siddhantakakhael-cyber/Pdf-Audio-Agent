@@ -7,6 +7,7 @@
 | 3 | [IKS-206 — Odia Long Q&A](OSOU_IKS_206_10_Mark_Odia_Full.mp3) | ଓଡ଼ିଆ | 12m 55s | 4.4 MB |
 | 4 | [IKS-206 — English Long Q&A](OSOU_IKS_206_8_Long_EN_Full.mp3) | English | 13m 38s | 4.7 MB |
 | 5 | [IKS-206 — Hinglish Long Q&A](OSOU_IKS_206_10_Mark_Hinglish_Full.mp3) | Hinglish (Devanagari) | 12m 04s | 4.1 MB |
+| 6 | [PUMC-207 — Cyber Security Hinglish](PUMC-207_Cyber_Security_Hinglish_Full.mp3) | Hinglish (Devanagari) | 19m 21s | 6.7 MB |
 
 पहले दो में AI (PGS-AI-205) के Units 1–8 + Appendix-I पूरे कवर हैं. फ़र्क सिर्फ़ भाषा और explanation style का है.
 आख़िरी दो IKS (PGV-IKS-206) के 8 long questions के model answers हैं — एक Odia में, एक English में.
@@ -129,3 +130,34 @@ Transcript तैयार है, ऑडियो अभी नहीं बन
 Odia PDF se text nikaalne par **matras duplicate** ho gaye the (`ଓଡ଼ିିଶା`, `ଜ୍ଞାାନ`). Audio banane se pehle
 har duplicated matra ko collapse kiya gaya (`ଓଡ଼ିଶା`, `ଜ୍ଞାନ`) — warna TTS galat uchcharan karta.
 Ye cleanup `OSOU_IKS_206_10_Mark_Odia_transcript.txt` mein already applied hai.
+
+## 4. OSOU — Cyber Security (PUMC-207) — Complete Hinglish Revision
+
+**Units 1–8, poora syllabus ek hi MP3 mein — exam keywords + real-life examples ke saath**
+
+| | |
+|---|---|
+| फ़ाइल | [`PUMC-207_Cyber_Security_Hinglish_Full.mp3`](PUMC-207_Cyber_Security_Hinglish_Full.mp3) |
+| अवधि | **19 मिनट 21 सेकंड** |
+| साइज़ | 6.7 MB |
+| आवाज़ | Female, natural Hinglish, normal speed |
+| फ़ॉर्मैट | MP3, 48 kbps, 24 kHz, mono |
+| Transcript | [`PUMC-207_Hinglish_transcript.txt`](PUMC-207_Hinglish_transcript.txt) |
+| Source text | [`PUMC-207_source_text.txt`](PUMC-207_source_text.txt) |
+
+**सीधा डाउनलोड:** [यहाँ क्लिक करें](../../raw/arena/f55f9949-pdf-audio-agent/audio/PUMC-207_Cyber_Security_Hinglish_Full.mp3)
+
+### Coverage — Unit 1 se 8 tak
+
+| Unit | Topic |
+|---|---|
+| 1 | Fundamentals, Cyber Space & Crime, **CIA Triad + AAA**, IT Act 2000 (Sec 43/66/66C/66D), Ethics |
+| 2 | Protocols & vulnerabilities (HTTP/DNS/TCP-IP/ARP/FTP), **Firewall vs IDS vs IPS**, VPN, WEP/WPA/WPA2/WPA3, Evil Twin |
+| 3 | OS security & Least Privilege, Endpoint Protection (EPP/EDR), Patch Mgmt & Zero-Day, System Hardening, Virtualization & VM Escape, Cloud Shared Responsibility |
+| 4 | **Symmetric vs Asymmetric**, Hash (MD5/SHA-256), Digital Signature, PKI & X.509 CA, TLS Handshake |
+| 5 | Identification→Authentication→Authorization→Accounting, MFA ke 3 factors, **DAC/MAC/RBAC/ABAC**, SSO & Federation |
+| 6 | OWASP Top 10, SSDLC ke 6 steps, **SQLi / XSS / CSRF / Buffer Overflow**, SAST vs DAST vs Pen-Testing |
+| 7 | Malware (Virus/Worm/Trojan/Ransomware/Spyware), APT, Social Engineering (Phishing/Vishing/Smishing/Baiting/Tailgating), **IR ke 6 phases**, Digital Forensics & Chain of Custody |
+| 8 | Cloud/IoT/AI security & Deepfakes, PII, **DPDP Act 2023 vs GDPR**, ISO 27001/NIST CSF/PCI-DSS/HIPAA, careers & Responsible Disclosure |
+
+Technical terms (CIA Triad, SQLi, MFA, RBAC, TLS Handshake) English mein hi rakhe hain, taaki exam mein wahi likh sako — bas pronunciation ke liye script Devanagari hai.

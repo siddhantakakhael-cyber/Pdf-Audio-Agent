@@ -1,0 +1,509 @@
+SECOND SEMESTER | COMPLETE EXAM REVISION GUIDE
+PUMC-207: Cyber Security
+Simple Hinglish Notes + Exam Keywords + Comparison Tables + 8-10 Mark Answer
+Blueprints (Designed for 1-2 Hour Full Syllabus Mastery)
+COURSE CODE
+PUMC-207
+CREDIT VALUE
+02 Credits
+NOTIONAL HOURS
+60 Hours
+REVISION TIME
+90-120 Mins
+2-Hour Smart Study Plan (Exam Mein Full Answer Kaise Likhen)
+Step 1 (Concepts Samjhen): Har topic ko simple Hinglish + real-life example se samjhen.
+Concept clear hone par aap khud se bhi answer bana sakte hain.
+Step 2 (Bold English Keywords Yaad Rakhen): Exam mein answer likhte waqt bold kiye
+gaye English terms (jaise CIA Triad, Firewall, SQL Injection, MFA) zaroor use karen — inhi
+par marks milte hain.
+Step 3 (Tables & Blueprints): Comparison tables aur har Unit ke end mein diya gaya Exam
+Answer Blueprint follow karen (Introduction + Diagram/Points + Example + Conclusion).
+Unit
+Unit Title
+Key Sub-Topics Covered
+Time
+01
+Introduction to Cyber Security
+Fundamentals, Cyber Space & Crime, CIA
+Triad, IT Act & Ethics
+12 mins
+02
+Network Security Fundamentals
+Protocols & Vulnerabilities, Firewalls,
+IDS/IPS, VPNs, Wireless Security
+15 mins
+03
+System Security
+OS Security, Endpoint Protection, Patch
+Management, Virtualization & Cloud
+12 mins
+04
+Cryptography
+Symmetric vs Asymmetric, Hash & Digital
+Signature, PKI, SSL/TLS
+15 mins
+05
+Access Control & Authentication
+Auth Protocols, MFA, Access Control
+Models (DAC/MAC/RBAC), SSO
+12 mins
+06
+Application Security
+Web App Security, SSDLC, SQLi/XSS/CSRF,
+SAST/DAST & Pen Testing
+15 mins
+07
+Cyber Threats & Incident
+Response
+Malware & APTs, Social Engineering,
+Incident Response, Digital Forensics
+15 mins
+08
+Emerging Trends & Future
+Cloud/IoT/AI Security, Data Privacy
+(DPDP/GDPR), Governance, Careers
+12 mins
+
+Page 2 of 11
+PUMC-207: Cyber Security | 2-Hour Hinglish Revision Guide
+Unit 01: Introduction to Cyber Security
+1.1 Introduction & Fundamentals of Cyber
+Cyber Security ka matlab hai computers, servers, mobile devices, networks, aur electronic data ko
+unauthorized access (bina permission ghusna), chori, ya damage se bachana. Jaise hum apne ghar
+ya dukan mein tala (lock) lagate hain, waise hi digital duniya mein data ko safe rakhne ke liye cyber
+security lagayi jaati hai.
+Fundamentals of Cyber: Cyber duniya teen cheezon par chalti hai — People (users jo system
+chalate hain), Processes (rules aur policies), aur Technology (software aur hardware tools jaise
+antivirus aur firewall). Teenon milkar ek surakshit system banate hain.
+1.2 Cyber Space and Cyber Crime
+Cyber Space: Yeh ek virtual (kalpanik) digital environment hai jahan internet ke zariye saare
+computers, networks, websites, aur users aapas mein jude rehte hain (jaise WhatsApp, online
+banking, cloud storage).
+Cyber Crime: Jab koi vyakti computer ya internet ka galat istemal karke kisi ko nuksan
+pahunchata hai ya chori karta hai, use cyber crime kehte hain.
+Example Fake bank call karke OTP maangna (Phishing), kisi ka Instagram account hack karna, ya
+fake website banakar paise thagna cyber crime hai.
+1.3 Security Principles (CIA Triad + AAA)
+Cyber security ka sabse bada base CIA Triad hai. Exam mein is par 10-mark question zaroor aata
+hai:
+C — Confidentiality
+Sirf authorized log hi data
+dekh saken. (Tool: Encryption,
+Password). Ex: Bank balance
+sirf aap dekh sakte hain.
+I — Integrity
+Data raste mein badla ya
+tamper na ho. (Tool: Hashing,
+Digital Signature). Ex: UPI se
+Rs 500 bhejen to 500 hi jaye,
+5000 nahi.
+A — Availability
+Jab zaroorat ho, system aur
+data available rahe. (Tool:
+Backups, DDoS protection). Ex:
+Bank app 24x7 kaam kare.
+Additional Principles: Non-Repudiation (bhejne wala baad mein mukar na sake ki usne message
+nahi bheja) aur Authentication (user ki pehchan verify karna).
+1.4 Cyber Laws and Ethics
+Cyber Laws (IT Act 2000 & Amendment 2008): Bharat mein cyber crimes ko rokne ke liye
+Information Technology (IT) Act, 2000 banaya gaya hai. Section 43 (data damage), Section 66
+(hacking), Section 66C (identity theft), aur Section 66D (cheating by personation) iske mukhya
+sections hain.
+Cyber Ethics: Internet use karne ke sahi moral rules — kisi ka data bina permission na lena,
+copyright ka samman karna, fake news na failana, aur cyberbullying na karna.
+
+Page 3 of 11
+PUMC-207: Cyber Security | 2-Hour Hinglish Revision Guide
+Unit 01 Exam Answer Blueprint (8-10 Marks)
+Q: Explain Cyber Security and the CIA Triad in detail.
+Answer Structure: (1) Definition of Cyber Security & Cyber Space → (2) 3 Boxes bana kar C, I,
+A explain karen (tools + real-life UPI/Bank example ke saath) → (3) Short note on Non-
+Repudiation & IT Act 2000 → (4) Conclusion.
+Unit 02: Network Security Fundamentals
+2.1 Introduction & Network Protocols and Vulnerabilities
+Network Security ka kaam hai jab data ek computer se doosre computer par internet ya Wi-Fi ke
+zariye jaata hai, tab use hackers se bachana. Network par baat karne ke liye kuch rules hote hain
+jinhe Protocols kehte hain.
+Protocol
+Kaam (Function)
+Vulnerability (Kamzori / Khatra)
+HTTP
+Websites kholne ka basic protocol
+Plain text mein data bhejta hai; hacker raste
+mein password padh sakta hai (Sniffing).
+DNS
+Website name ko IP address mein
+badalta hai
+DNS Spoofing / Poisoning: User ko asli site ki
+jagah nakli site par bhej dena.
+TCP / IP
+Internet par data packets bhejta
+hai
+SYN Flood (DoS): Fake requests bhejkar
+server ko crash ya slow kar dena.
+ARP / FTP
+Local MAC mapping / File transfer
+ARP Spoofing (MITM) aur FTP mein
+unencrypted password chori hona.
+2.2 Firewalls and Intrusion Detection/Prevention Systems (IDS/IPS)
+Firewall ek security guard ki tarah hai jo network aur internet ke beech khada rehta hai aur rules ke
+hisab se traffic ko allow ya block karta hai (jaise Packet Filtering, Stateful Inspection, aur Next-Gen
+Firewall).
+IDS (Intrusion Detection System): Yeh CCTV camera ki tarah hai — network traffic ko monitor
+karta hai aur agar koi attack dikhe to admin ko Alert bhejta hai, par khud block nahi karta.
+IPS (Intrusion Prevention System): Yeh active security guard hai — attack ko detect karne ke
+saath-saath use turant Block bhi kar deta hai.
+2.3 Virtual Private Networks (VPNs)
+VPN ek encrypted surakshit tunnel (surang) banata hai aapke device aur server ke beech. Isse
+aapka IP address chhup jaata hai aur public Wi-Fi par bhi koi aapka data padh nahi sakta. Mukhya
+VPN protocols hain IPSec aur SSL/TLS VPN.
+Example Railway station ke free Wi-Fi par banking karne se pehle VPN on karne se data
+encrypted ho jaata hai.
+
+Page 4 of 11
+PUMC-207: Cyber Security | 2-Hour Hinglish Revision Guide
+2.4 Wireless Network Security
+Wi-Fi signals hawa mein travel karte hain, isliye koi bhi aas-paas baithkar unhe pakad sakta hai.
+Isse bachne ke liye wireless encryption standards use hote hain:
+WEP: Sabse purana aur kamzor (aajkal use nahi hota, minutes mein crack ho jaata hai).
+WPA / WPA2: Strong security (WPA2 mein AES encryption hota hai).
+WPA3: Sabse naya aur sabse safe standard (brute-force attacks se bachata hai).
+Common Wi-Fi Threats: Rogue Access Point (nakli Wi-Fi router) aur Evil Twin Attack (asli
+naam jaisa nakli hotspot banakar password churana).
+Unit 02 Exam Answer Blueprint (8-10 Marks)
+Q: Differentiate between Firewall, IDS, and IPS. Explain how VPN secures a network.
+Answer Structure: (1) Firewall definition & types → (2) IDS vs IPS comparison (Monitor + Alert
+vs Detect + Block) → (3) VPN Tunneling & Encryption concept + IPSec/SSL → (4) Public Wi-Fi
+example.
+Unit 03: System Security
+3.1 Introduction & Operating System (OS) Security
+System Security ka matlab hai har individual computer, laptop, ya server ko andar se surakshit
+banana. Operating System (Windows, Linux, macOS, Android) hardware aur software ko control
+karta hai, isliye iski security sabse zaroori hai.
+User Accounts & Least Privilege: Har user ko sirf utni hi permission dena jitni uske kaam ke liye
+zaroori hai (rozana kaam ke liye Admin account use nahi karna chahiye).
+File System Security: Important folders par Read/Write/Execute permissions set karna aur
+BitLocker/FileVault se disk encrypt karna.
+3.2 Endpoint Protection
+Network se jude har device (laptop, phone, POS machine) ko Endpoint kehte hain. Inhe bachane
+ke liye Endpoint Protection Platform (EPP) aur EDR (Endpoint Detection and Response) use hota
+hai, jisme Antivirus, Anti-malware, Host-based Firewall, aur USB device control shamil hote hain.
+3.3 Patch Management and System Hardening
+Patch Management: Software companies jab kisi bug ya security hole (vulnerability) ko theek
+karne ke liye update bhejti hain, use Patch kehte hain. Time par update na karne se Zero-Day
+Attack ka khatra rehta hai.
+System Hardening: System ki kamzoriyan kam karna — jaise bekaar apps uninstall karna,
+unused network ports band karna, default passwords badalna, aur auto-run disable karna.
+
+Page 5 of 11
+PUMC-207: Cyber Security | 2-Hour Hinglish Revision Guide
+3.4 Virtualization and Cloud Security Basics
+Virtualization mein ek hi physical server par software (Hypervisor) ki madad se kai virtual
+computers (VMs) chalaye jaate hain. Har VM doosre se alag (isolated) rehta hai, par agar hacker ek
+VM se nikal kar Hypervisor par kabza kar le, to use VM Escape kehte hain.
+Cloud Security (Shared Responsibility Model): Cloud mein (AWS, Azure, Google Cloud) security
+dono ki zimmedari hoti hai — Cloud Provider hardware aur building ki suraksha karta hai, aur
+Customer (User) apne data, passwords, aur settings ki suraksha karta hai.
+Unit 03 Exam Answer Blueprint (8-10 Marks)
+Q: What is System Hardening and Patch Management? Explain Endpoint Protection.
+Answer Structure: (1) OS Security basics (Least Privilege) → (2) 5 steps of System Hardening
+→ (3) Patch Management & Zero-Day risk → (4) Endpoint Protection (Antivirus + EDR + Host
+Firewall).
+Unit 04: Cryptography
+4.1 Introduction
+Cryptography data ko secret code mein badalne ki kala aur vigyan hai taaki sirf sahi vyakti hi use
+padh sake. Isme 4 main terms hote hain:
+Plaintext
+Asli padhne layak
+message (e.g.,
+"HELLO")
+→
+Encryption (+
+Key)
+Message ko secret
+code mein badalna
+→
+Ciphertext
+Secret unreadable
+code (e.g.,
+"X9#kL!")
+→
+Decryption
+Code ko wapas
+Plaintext banana
+4.2 Symmetric and Asymmetric Encryption
+Feature
+Symmetric Encryption
+Asymmetric Encryption
+Keys Used
+Ek hi Shared Secret Key encryption
+aur decryption dono ke liye.
+Do keys: Public Key (sabko pata) aur
+Private Key (sirf owner ke paas).
+Speed
+Bahut tez (fast) — bade files/data ke
+liye best.
+Slow — key exchange aur chhote
+data ke liye best.
+Key Sharing Risk
+Key ko surakshit tarike se bhejna
+mushkil hota hai.
+Surakshit — Private key kabhi share
+nahi karni padti.
+Examples
+AES (Advanced Encryption
+Standard), DES, 3DES
+RSA, ECC (Elliptic Curve
+Cryptography), Diffie-Hellman
+
+Page 6 of 11
+PUMC-207: Cyber Security | 2-Hour Hinglish Revision Guide
+4.3 Hash Functions and Digital Signatures
+Hash Function: Yeh kisi bhi file ya password ko ek fixed-length unique fingerprint (hash value)
+mein badal deta hai (jaise MD5, SHA-256). Yeh one-way hota hai (hash se wapas asli data nahi
+ban sakta) aur Integrity check karta hai.
+Digital Signature: Sender apni Private Key se message ke hash ko sign karta hai, aur receiver
+sender ki Public Key se verify karta hai. Isse Authentication, Integrity, aur Non-Repudiation
+teeno milte hain.
+4.4 Public Key Infrastructure (PKI) & SSL/TLS
+PKI (Public Key Infrastructure): Yeh ek system hai jo digital certificates banata, manage karta,
+aur verify karta hai. Isme CA (Certificate Authority) trusted third party hoti hai jo website ko
+X.509 Digital Certificate deti hai (jaise Aadhaar/Passport verification).
+SSL/TLS & HTTPS: Jab aap browser mein HTTPS aur padlock icon dekhte hain, to wahan TLS
+(Transport Layer Security) kaam kar raha hota hai. Pehle Asymmetric encryption se ek secret
+Session Key exchange hoti hai (TLS Handshake), aur phir Symmetric encryption se fast aur safe
+communication chalta hai.
+Unit 04 Exam Answer Blueprint (8-10 Marks)
+Q: Compare Symmetric and Asymmetric Encryption. Explain Digital Signatures and
+SSL/TLS.
+Answer Structure: (1) Plaintext-to-Ciphertext diagram → (2) Symmetric vs Asymmetric 4-row
+Table → (3) Hash Function (SHA-256) + Digital Signature working → (4) PKI & TLS Handshake
+for HTTPS.
+Unit 05: Access Control and Authentication
+5.1 Introduction & Authentication Methods
+System mein kisi ko entry dene ke 4 steps hote hain: Identification (aap kaun hain — Username),
+Authentication (saboot dikhaiye — Password/OTP), Authorization (aap kya-kya kar sakte hain —
+Permissions), aur Accounting (aapne kya kiya — Logs).
+Authentication Methods & Protocols: Passwords/PINs, Smart Cards/Tokens, Biometrics
+(Fingerprint/Face ID). Network protocols mein Kerberos (ticket-based authentication), RADIUS
+(Wi-Fi/VPN login ke liye), aur OAuth / SAML (web apps ke liye) use hote hain.
+5.2 Multi-Factor Authentication (MFA)
+Sirf password kaafi nahi hota kyunki wo chori ya hack ho sakta hai. MFA mein login ke liye kam se
+kam 2 alag categories ka saboot maanga jaata hai:
+1. Something You Know
+Password, PIN, Security
+Question
+2. Something You Have
+Mobile OTP, Authenticator
+App, Hardware Token
+3. Something You Are
+Fingerprint, Face ID, Iris Scan
+
+Page 7 of 11
+PUMC-207: Cyber Security | 2-Hour Hinglish Revision Guide
+5.3 Access Control Models
+Model
+Kaise Kaam Karta Hai
+Real-Life Example
+DAC (Discretionary)
+File ka owner khud decide karta hai ki kise
+access dena hai.
+Google Drive file kisi dost ke
+saath share karna.
+MAC (Mandatory)
+System admin strict security labels (Top
+Secret, Confidential) set karta hai; user
+badal nahi sakta.
+Army ya Government
+intelligence agencies.
+RBAC (Role-Based)
+User ke job role ke hisab se permissions
+milti hain.
+Bank mein Cashier vs Branch
+Manager ke rights.
+ABAC (Attribute-
+Based)
+User, time, location, aur device ke
+attributes check karke access milta hai.
+Office laptop se sirf 9 AM - 6
+PM ke beech login allow hona.
+5.4 Single Sign-On (SSO) and Federation
+SSO (Single Sign-On): Ek baar login karne ke baad bina baar-baar password daale multiple apps
+use kar paana (jaise ek Google login se Gmail, YouTube, aur Drive sab khul jaana). Identity
+Federation mein ek company ki Identity Provider (IdP) doosri company ke app ko user verify karke
+deti hai (jaise "Login with Google" ya "Login with Facebook", jisme SAML 2.0, OAuth 2.0, aur
+OpenID Connect use hote hain).
+Unit 05 Exam Answer Blueprint (8-10 Marks)
+Q: Explain Multi-Factor Authentication (MFA) and Access Control Models (DAC, MAC,
+RBAC, ABAC).
+Answer Structure: (1) Authentication vs Authorization → (2) 3 Factors of MFA with examples
+→ (3) 4-row Table of DAC, MAC, RBAC, ABAC → (4) Short note on SSO & Federation.
+Unit 06: Application Security
+6.1 Introduction & Web Application Security
+Application Security ka matlab hai websites aur mobile apps ke code aur design ko surakshit
+banana taaki hackers app ke zariye database chori na kar saken. OWASP Top 10 duniya bhar ki
+sabse khatarnak web app kamzoriyon ki list hai. Web apps ko safe rakhne ke liye Input Validation
+(user jo type kare use check karna), secure Session Management, aur HTTPS zaroori hai.
+6.2 Secure Software Development Lifecycle (SSDLC)
+Normal software banane ke baad security lagana mehenga aur mushkil hota hai. SSDLC mein
+software banane ke har step mein security shamil ki jaati hai:
+1. Requirements (Security goals) → 2. Design (Threat Modeling) → 3. Coding (Secure coding
+rules) → 4. Testing (Security bugs dhundhna) → 5. Deployment (Safe configuration) → 6.
+
+Page 8 of 11
+PUMC-207: Cyber Security | 2-Hour Hinglish Revision Guide
+Maintenance (Regular patches).
+6.3 Application-Level Attacks
+Attack Name
+Kya Hota Hai (Simple Hinglish)
+Prevention (Bachav)
+SQL Injection (SQLi)
+Login box mein galat SQL code daalkar
+poora database chura lena ya bina
+password login karna.
+Parameterized Queries &
+Input Validation.
+Cross-Site Scripting
+(XSS)
+Website ke comment/search box mein
+malicious JavaScript daalna jo doosre users
+ke browser mein chal jaye.
+Input Sanitization & Output
+Encoding.
+CSRF (Cross-Site
+Request Forgery)
+User ke logged-in browser ko dhokhe se
+use karke uski marzi ke bina bank transfer
+ya password change karwana.
+Anti-CSRF Tokens & SameSite
+Cookies.
+Buffer Overflow
+Memory ki limit se zyada data bhejkar
+program ko crash karna ya apna code
+chalana.
+Bounds Checking & Safe
+languages/functions.
+6.4 Security Testing (SAST, DAST & Pen Testing)
+SAST (Static Application Security Testing): Bina software chalaye uske Source Code ko check
+karna (White-box testing).
+DAST (Dynamic Application Security Testing): Chalti hui website/app par bahar se attack
+karke bugs dhundhna (Black-box testing).
+Penetration Testing (Pen-Testing): Ethical hackers (White-hat) asli hacker ki tarah system ko
+hack karne ki koshish karte hain taaki kamzoriyan pata chalen. Vulnerability Scanning
+automated tools se known bugs ki list nikalta hai.
+Unit 06 Exam Answer Blueprint (8-10 Marks)
+Q: Explain SQL Injection, XSS, and CSRF attacks with prevention. Also differentiate SAST
+and DAST.
+Answer Structure: (1) Web App Security & SSDLC phases → (2) Table of SQLi, XSS, CSRF,
+Buffer Overflow → (3) SAST (Code check) vs DAST (Running app check) vs Pen-Testing.
+Unit 07: Cyber Threats, Attacks, and Incident Response
+7.1 Malware and Advanced Threats
+Malware (Malicious Software) aise programs hain jo computer ya mobile ko nuksan pahunchane
+ke liye banaye jaate hain:
+Virus: Kisi normal file se chipak kar aata hai aur user ke file kholne par failta hai.
+
+Page 9 of 11
+PUMC-207: Cyber Security | 2-Hour Hinglish Revision Guide
+Worm: Bina kisi ki madad ke khud-ba-khud network mein ek computer se doosre mein failta hai.
+Trojan Horse: Asli/useful app (jaise free game) jaisa dikhta hai par andar se hacker ko backdoor
+access deta hai.
+Ransomware: Aapki saari files ko lock (encrypt) kar deta hai aur kholne ke liye paise (ransom)
+maangta hai.
+Spyware & Adware: Spyware chupke se aapki activity/passwords churaata hai; Adware
+zabardasti ads dikhata hai.
+APT (Advanced Persistent Threat): Skilled hackers ka lamba aur chhupa hua attack jo mahino
+tak kisi badi company ya sarkar ke network mein baithkar data chori karta hai.
+7.2 Social Engineering Attacks
+Computer hack karne ki jagah insaan ke dimag (human psychology) ko dhokha dekar password
+ya OTP nikalna Social Engineering kehlata hai:
+Phishing: Fake email ya website link bhejkar login/bank details churana (Spear Phishing mein
+kisi ek khaas vyakti ko target kiya jaata hai).
+Vishing & Smishing: Vishing = Voice call par bank manager bankar OTP maangna; Smishing =
+Fake SMS bhejna (e.g., "Electricity bill pending").
+Baiting & Tailgating: Baiting = Lalach dekar virus wali USB pen drive lagwana; Tailgating = Kisi
+employee ke peeche-peeche bina ID card ke secure office mein ghusna.
+7.3 Incident Response and Management (6 Phases)
+Jab koi cyber attack ho jaye, to ghabrane ki jagah NIST Incident Response Lifecycle ke 6 steps
+follow kiye jaate hain:
+1. Preparation
+Team, tools & backups ready
+rakhna
+2. Identification
+Attack ko detect aur confirm
+karna
+3. Containment
+Affected PC ko network se
+alag karna
+4. Eradication
+Virus/hacker ko jad se khatam
+karna
+5. Recovery
+Clean backup se system
+wapas chalana
+6. Lessons Learned
+Report banana taaki dobara na
+ho
+7.4 Digital Forensics Basics
+Digital Forensics ka matlab hai cyber crime ke baad computer, mobile, ya server se digital saboot
+(evidence) scientific tarike se nikalna taaki court mein pesh kiya ja sake. Iske 4 main steps hain:
+Identification → Preservation (disk ki exact copy/image banana taaki original evidence kharab na
+ho) → Analysis → Reporting. Saboot kis-kis ke haath mein gaya uska record rakhne ko Chain of
+Custody kehte hain.
+
+Page 10 of 11
+PUMC-207: Cyber Security | 2-Hour Hinglish Revision Guide
+Unit 07 Exam Answer Blueprint (8-10 Marks)
+Q: Describe the 6 phases of Incident Response and explain Social Engineering & Malware
+types.
+Answer Structure: (1) Malware types (Virus, Worm, Trojan, Ransomware) → (2) Social
+Engineering (Phishing, Vishing, Smishing) → (3) 6-step Incident Response flow diagram → (4)
+Digital Forensics & Chain of Custody.
+Unit 08: Emerging Trends and Future of Cyber Security
+8.1 Cyber Security in Cloud, IoT, and AI
+Cloud Security: Aajkal companies apna data Cloud par rakhti hain. Sabse bada khatra hai
+Misconfiguration (galat privacy setting se data public ho jaana) aur insecure APIs.
+IoT (Internet of Things) Security: Smart TV, CCTV cameras, smart watches aur Alexa jaise
+devices mein aksar weak default passwords hote hain aur updates nahi aate, jinhe hackers
+hijacks karke Botnets (DDoS attack army) bana lete hain.
+AI in Cyber Security: AI ke dono pehlu hain — Positive: AI seconds mein lakhon logs check
+karke unknown attacks pakad leta hai. Negative: Hackers AI se realistic Deepfakes (nakli
+video/voice call) aur smart phishing emails bana rahe hain.
+8.2 Data Privacy and Protection
+Data Privacy ka matlab hai aapki personal information (PII — Personally Identifiable Information
+jaise Aadhaar, phone number, photo, bank detail) par aapka control hona. Iske liye duniya mein
+GDPR (Europe) aur Bharat mein DPDP Act 2023 (Digital Personal Data Protection Act) banaya
+gaya hai. Companies ko user ki Consent (marzi) leni zaroori hai aur sirf utna hi data collect karna
+chahiye jitna kaam ke liye chahiye (Data Minimization).
+8.3 Cyber Security Governance and Compliance
+Badi companies ko rules aur international standards follow karne padte hain:
+Standard /
+Framework
+Purpose (Kis Kaam Aata Hai)
+ISO/IEC 27001
+Information Security Management System (ISMS) ka global standard.
+NIST CSF
+Cyber security risk manage karne ka 5-function framework (Identify, Protect,
+Detect, Respond, Recover).
+PCI-DSS
+Credit/Debit card payments handle karne wali companies ke liye mandatory
+security rules.
+HIPAA / SOC 2
+Healthcare data safety (HIPAA) aur Cloud service providers ke trust audits
+(SOC 2).
+
+Page 11 of 11
+PUMC-207: Cyber Security | 2-Hour Hinglish Revision Guide
+8.4 Career Paths and Professional Ethics
+Cyber security mein aaj bahut high-demand careers hain: SOC Analyst (24x7 alerts monitor
+karna), Penetration Tester / Ethical Hacker (system test karna), Security Architect (safe network
+design karna), Digital Forensics Analyst, aur CISO (Chief Information Security Officer).
+Professional Ethics: Ek ethical hacker (White-Hat) hamesha likhit permission (authorization) ke
+saath hi testing karta hai, client ka data secret rakhta hai, aur koi bug milne par company ko
+chupchap batata hai (Responsible Disclosure) — na ki Black-Hat hackers ki tarah blackmail karta
+hai.
+Unit 08 Exam Answer Blueprint (8-10 Marks)
+Q: Discuss emerging trends in Cyber Security (Cloud, IoT, AI) and Data Privacy laws
+(DPDP/GDPR).
+Answer Structure: (1) Cloud, IoT, and AI (pros & deepfake threats) → (2) Data Privacy, PII &
+DPDP Act 2023 / GDPR → (3) Governance Standards Table (ISO 27001, NIST, PCI-DSS) → (4)
+Career paths & Ethics.
